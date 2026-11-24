@@ -9,13 +9,20 @@
 <body>
 
   <header class="hero">
+    <div class="hero-ilustracion">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M60 8 L104 24 V56 C104 84 86 104 60 114 C34 104 16 84 16 56 V24 Z" fill="#10b981" opacity="0.18"/>
+        <path d="M60 16 L96 29 V56 C96 80 81 97 60 106 C39 97 24 80 24 56 V29 Z" fill="#10b981"/>
+        <path d="M46 58 L55 67 L76 44" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
     <h1>Concientización en Seguridad</h1>
-    <p>Aprende a protegerte, proteger tu información y a tu organización</p>
+    <p>Porque más vale prevenir que andar lamentando: aquí te decimos cómo ponerte trucha con tu información</p>
     <div class="contador-box">
-      <span class="contador-icono">👁️</span>
+      <span class="contador-icono">👀</span>
       <div>
         <span id="contador-valor">...</span>
-        <small>personas han visitado esta página</small>
+        <small>compas ya se han pasado por aquí</small>
       </div>
     </div>
   </header>
@@ -31,69 +38,108 @@
   <main>
 
     <section id="cultura" class="tema">
+      <div class="icono-tema">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M32 4 L56 14 V30 C56 46 46 58 32 62 C18 58 8 46 8 30 V14 Z" fill="#2563eb"/>
+          <path d="M32 14 L48 21 V30 C48 41 41 49 32 52 C23 49 16 41 16 30 V21 Z" fill="#eff6ff"/>
+          <circle cx="32" cy="29" r="5" fill="#2563eb"/>
+          <rect x="29" y="33" width="6" height="10" rx="2" fill="#2563eb"/>
+        </svg>
+      </div>
       <h2>4.1 Cultura de seguridad</h2>
-      <p>La cultura de seguridad es el conjunto de valores, actitudes y comportamientos que una organización adopta frente a los riesgos de seguridad de la información. No se trata solo de instalar antivirus o firewalls, sino de que cada persona entienda que la seguridad es responsabilidad de todos, no únicamente del área de sistemas.</p>
+      <p>La cultura de seguridad es el conjunto de valores, actitudes y comportamientos que una organización adopta frente a los riesgos de seguridad de la información. No se trata nomás de instalar un antivirus y ya, échale un ojo: la seguridad es bronca de todos, no solo del área de sistemas.</p>
       <ul>
-        <li>La seguridad debe ser parte de la forma de trabajar diaria, no una tarea aislada.</li>
-        <li>El compromiso debe venir desde la dirección hasta cada colaborador.</li>
-        <li>Fomentar la comunicación abierta: reportar un incidente nunca debe generar miedo o castigo.</li>
-        <li>La capacitación continua refuerza esta cultura con el tiempo.</li>
+        <li>La seguridad debe ser parte de tu rutina diaria, no algo que haces "de vez en cuando porque se acuerdan de ti".</li>
+        <li>El compromiso tiene que venir desde los de arriba hasta el último colaborador; aquí nadie se queda fuera.</li>
+        <li>Fomentar la confianza: reportar un incidente nunca debe darte pena ni miedo a que te regañen.</li>
+        <li>La capacitación constante es lo que hace que esto no se quede en pura buena intención.</li>
       </ul>
     </section>
 
     <section id="ingenieria" class="tema">
+      <div class="icono-tema">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" fill="#fef3c7"/>
+          <path d="M20 26 C20 18 26 12 32 12 C38 12 44 18 44 26" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="24" cy="32" r="4" fill="#d97706"/>
+          <circle cx="40" cy="32" r="4" fill="#d97706"/>
+          <path d="M22 44 C26 40 38 40 42 44" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
       <h2>4.2 Ingeniería social</h2>
-      <p>La ingeniería social es la manipulación psicológica de personas para que, sin darse cuenta, revelen información confidencial o realicen acciones que comprometan la seguridad. No ataca a los sistemas, ataca a las personas.</p>
+      <p>La ingeniería social es cuando alguien te quiere dar atole con el dedo para sacarte información sin que te des cuenta. No le entran a los sistemas a lo bruto: le entran a las personas, que casi siempre somos el eslabón más fácil de tronar.</p>
       <ul>
-        <li><strong>Phishing:</strong> correos falsos que simulan ser de una entidad confiable para robar datos o credenciales.</li>
-        <li><strong>Vishing:</strong> llamadas telefónicas fraudulentas haciéndose pasar por soporte técnico, bancos, etc.</li>
-        <li><strong>Pretexting:</strong> crear una historia creíble para ganar la confianza de la víctima.</li>
-        <li><strong>Baiting:</strong> dejar dispositivos infectados (USB, enlaces) como "cebo" para que la víctima los use.</li>
+        <li><strong>Phishing:</strong> correos truchos que se hacen pasar por tu banco, tu escuela o quien sea, para robarte tus datos.</li>
+        <li><strong>Vishing:</strong> llamadas de "soporte técnico" o "tu banco" que de milagrosas no tienen nada, puro cuento.</li>
+        <li><strong>Pretexting:</strong> te arman todo un cuento bien creíble nomás para ganarse tu confianza.</li>
+        <li><strong>Baiting:</strong> dejan por ahí una USB "perdida" como carnada, para que la conectes sin pensarlo.</li>
       </ul>
-      <p>La mejor defensa es la duda razonable: verificar siempre antes de actuar.</p>
+      <p>Aguas: si algo te huele raro, no te la claves. La mejor defensa es dudar y verificar antes de hacer clic en lo que sea.</p>
     </section>
 
     <section id="politicas" class="tema">
+      <div class="icono-tema">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="14" y="8" width="36" height="48" rx="4" fill="#ede9fe"/>
+          <rect x="14" y="8" width="36" height="48" rx="4" fill="none" stroke="#7c3aed" stroke-width="3"/>
+          <line x1="22" y1="20" x2="42" y2="20" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+          <line x1="22" y1="30" x2="42" y2="30" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+          <line x1="22" y1="40" x2="34" y2="40" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
       <h2>4.3 Políticas básicas</h2>
-      <p>Las políticas de seguridad son las reglas formales que establecen cómo deben comportarse los usuarios y los sistemas para proteger la información.</p>
+      <p>Las políticas de seguridad son las reglas del juego: cómo le debemos hacer todos, sin excepción, para cuidar la información. Aquí no se trata de ponerse sus moños, son normas que aplican parejo para todos.</p>
       <ul>
-        <li>Política de contraseñas seguras y cambio periódico.</li>
-        <li>Política de uso aceptable de equipos y recursos tecnológicos.</li>
-        <li>Política de control de acceso (quién puede ver qué información).</li>
-        <li>Política de respaldo y recuperación de información.</li>
-        <li>Política de reporte de incidentes de seguridad.</li>
+        <li>Política de contraseñas seguras y cambio periódico (ya ni se te ocurra usar "123456" otra vez).</li>
+        <li>Política de uso correcto de equipos y recursos tecnológicos.</li>
+        <li>Política de control de acceso: quién puede ver qué información y quién no.</li>
+        <li>Política de respaldo y recuperación de la información, por si las moscas.</li>
+        <li>Política de reporte de incidentes: si algo pasó, se dice, no se tapa.</li>
       </ul>
     </section>
 
     <section id="practicas" class="tema">
+      <div class="icono-tema">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="10" y="10" width="44" height="44" rx="8" fill="#d1fae5"/>
+          <path d="M20 32 L28 40 L44 22" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <h2>4.4 Buenas prácticas</h2>
-      <p>Son hábitos sencillos que, aplicados de forma constante, reducen enormemente el riesgo de un incidente de seguridad.</p>
+      <p>Son esos hábitos sencillos que, si los aplicas siempre y no nomás cuando te acuerdas, bajan muchísimo el riesgo de que te den una mala pasada.</p>
       <ul>
-        <li>Usar contraseñas únicas y robustas, idealmente con un gestor de contraseñas.</li>
-        <li>Activar la autenticación de dos factores (2FA) siempre que sea posible.</li>
-        <li>No conectar dispositivos USB desconocidos.</li>
-        <li>Verificar remitentes y enlaces antes de hacer clic.</li>
-        <li>Mantener los sistemas y aplicaciones actualizados.</li>
-        <li>Bloquear la sesión del equipo al alejarse de él.</li>
+        <li>Usa contraseñas únicas y robustas; ya es hora de dejar el "futbol2024" en el pasado.</li>
+        <li>Activa la autenticación de dos factores (2FA) siempre que se pueda, no cuesta nada y ayuda un chorro.</li>
+        <li>No conectes USB desconocidas, aunque digan "fotos de la fiesta" — no caigas de panzazo.</li>
+        <li>Checa bien remitentes y enlaces antes de darle clic a lo que sea.</li>
+        <li>Mantén tus sistemas y apps actualizados, no los dejes a su suerte.</li>
+        <li>Bloquea tu equipo cada que te alejes, aunque sea "tantito".</li>
       </ul>
     </section>
 
     <section id="responsabilidad" class="tema">
+      <div class="icono-tema">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="20" r="10" fill="#2563eb"/>
+          <path d="M14 54 C14 40 22 34 32 34 C42 34 50 40 50 54" fill="#2563eb"/>
+          <path d="M26 44 L31 49 L40 38" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <h2>4.5 Responsabilidad del usuario</h2>
-      <p>Cada usuario es la primera línea de defensa. Por más tecnología de seguridad que exista, una sola persona que haga clic en un enlace malicioso puede comprometer a toda una organización.</p>
+      <p>Tú eres la primera línea de defensa, así nomás de claro. Por más candados y tecnología que haya, si alguien le da clic a lo que no debía, se jodió todo el esfuerzo del equipo.</p>
       <ul>
-        <li>Conocer y cumplir las políticas de seguridad de su organización.</li>
-        <li>Reportar de inmediato cualquier actividad sospechosa.</li>
-        <li>No compartir credenciales ni información sensible por canales no seguros.</li>
-        <li>Participar activamente en las capacitaciones de seguridad.</li>
-        <li>Asumir que la seguridad no es "trabajo de otro", sino propio.</li>
+        <li>Conoce y respeta las políticas de seguridad de tu escuela u organización.</li>
+        <li>Reporta luego luego cualquier cosa rara que veas, no te esperes a ver si se compone solo.</li>
+        <li>No compartas contraseñas ni info sensible por donde sea, ni aunque "confíes" en la persona.</li>
+        <li>Métele ganas a las capacitaciones, no las veas nomás como trámite.</li>
+        <li>No le eches la bolita a otro: la seguridad empieza contigo, no es "trabajo de alguien más".</li>
       </ul>
     </section>
 
   </main>
 
   <footer>
-    <p>Concientización en Seguridad &middot; Proyecto con Supabase</p>
+    <p>Concientización en Seguridad &middot; Hecho con Supabase, y bastante café ☕</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
