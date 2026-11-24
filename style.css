@@ -1,0 +1,143 @@
+:root {
+  --bg: #0f172a;
+  --bg-section: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #10b981;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #f1f5f9;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--bg), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  margin: 0 0 25px;
+  color: #cbd5e1;
+}
+
+.contador-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.contador-icono {
+  font-size: 1.5rem;
+}
+
+#contador-valor {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+.contador-box small {
+  color: #e2e8f0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  background: white;
+  padding: 14px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  z-index: 10;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: #eff6ff;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+.tema {
+  background: var(--bg-section);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 30px;
+  margin-bottom: 24px;
+  scroll-margin-top: 80px;
+}
+
+.tema h2 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.tema ul {
+  padding-left: 20px;
+}
+
+.tema li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .menu {
+    gap: 4px;
+  }
+  .menu a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

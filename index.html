@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concientización en Seguridad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Concientización en Seguridad</h1>
+    <p>Aprende a protegerte, proteger tu información y a tu organización</p>
+    <div class="contador-box">
+      <span class="contador-icono">👁️</span>
+      <div>
+        <span id="contador-valor">...</span>
+        <small>personas han visitado esta página</small>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <a href="#cultura">4.1 Cultura de seguridad</a>
+    <a href="#ingenieria">4.2 Ingeniería social</a>
+    <a href="#politicas">4.3 Políticas básicas</a>
+    <a href="#practicas">4.4 Buenas prácticas</a>
+    <a href="#responsabilidad">4.5 Responsabilidad del usuario</a>
+  </nav>
+
+  <main>
+
+    <section id="cultura" class="tema">
+      <h2>4.1 Cultura de seguridad</h2>
+      <p>La cultura de seguridad es el conjunto de valores, actitudes y comportamientos que una organización adopta frente a los riesgos de seguridad de la información. No se trata solo de instalar antivirus o firewalls, sino de que cada persona entienda que la seguridad es responsabilidad de todos, no únicamente del área de sistemas.</p>
+      <ul>
+        <li>La seguridad debe ser parte de la forma de trabajar diaria, no una tarea aislada.</li>
+        <li>El compromiso debe venir desde la dirección hasta cada colaborador.</li>
+        <li>Fomentar la comunicación abierta: reportar un incidente nunca debe generar miedo o castigo.</li>
+        <li>La capacitación continua refuerza esta cultura con el tiempo.</li>
+      </ul>
+    </section>
+
+    <section id="ingenieria" class="tema">
+      <h2>4.2 Ingeniería social</h2>
+      <p>La ingeniería social es la manipulación psicológica de personas para que, sin darse cuenta, revelen información confidencial o realicen acciones que comprometan la seguridad. No ataca a los sistemas, ataca a las personas.</p>
+      <ul>
+        <li><strong>Phishing:</strong> correos falsos que simulan ser de una entidad confiable para robar datos o credenciales.</li>
+        <li><strong>Vishing:</strong> llamadas telefónicas fraudulentas haciéndose pasar por soporte técnico, bancos, etc.</li>
+        <li><strong>Pretexting:</strong> crear una historia creíble para ganar la confianza de la víctima.</li>
+        <li><strong>Baiting:</strong> dejar dispositivos infectados (USB, enlaces) como "cebo" para que la víctima los use.</li>
+      </ul>
+      <p>La mejor defensa es la duda razonable: verificar siempre antes de actuar.</p>
+    </section>
+
+    <section id="politicas" class="tema">
+      <h2>4.3 Políticas básicas</h2>
+      <p>Las políticas de seguridad son las reglas formales que establecen cómo deben comportarse los usuarios y los sistemas para proteger la información.</p>
+      <ul>
+        <li>Política de contraseñas seguras y cambio periódico.</li>
+        <li>Política de uso aceptable de equipos y recursos tecnológicos.</li>
+        <li>Política de control de acceso (quién puede ver qué información).</li>
+        <li>Política de respaldo y recuperación de información.</li>
+        <li>Política de reporte de incidentes de seguridad.</li>
+      </ul>
+    </section>
+
+    <section id="practicas" class="tema">
+      <h2>4.4 Buenas prácticas</h2>
+      <p>Son hábitos sencillos que, aplicados de forma constante, reducen enormemente el riesgo de un incidente de seguridad.</p>
+      <ul>
+        <li>Usar contraseñas únicas y robustas, idealmente con un gestor de contraseñas.</li>
+        <li>Activar la autenticación de dos factores (2FA) siempre que sea posible.</li>
+        <li>No conectar dispositivos USB desconocidos.</li>
+        <li>Verificar remitentes y enlaces antes de hacer clic.</li>
+        <li>Mantener los sistemas y aplicaciones actualizados.</li>
+        <li>Bloquear la sesión del equipo al alejarse de él.</li>
+      </ul>
+    </section>
+
+    <section id="responsabilidad" class="tema">
+      <h2>4.5 Responsabilidad del usuario</h2>
+      <p>Cada usuario es la primera línea de defensa. Por más tecnología de seguridad que exista, una sola persona que haga clic en un enlace malicioso puede comprometer a toda una organización.</p>
+      <ul>
+        <li>Conocer y cumplir las políticas de seguridad de su organización.</li>
+        <li>Reportar de inmediato cualquier actividad sospechosa.</li>
+        <li>No compartir credenciales ni información sensible por canales no seguros.</li>
+        <li>Participar activamente en las capacitaciones de seguridad.</li>
+        <li>Asumir que la seguridad no es "trabajo de otro", sino propio.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Concientización en Seguridad &middot; Proyecto con Supabase</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
