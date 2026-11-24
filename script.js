@@ -10,23 +10,15 @@ const { createClient } = supabase;
 const client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const contadorEl = document.getElementById("contador-valor");
+const btnLike = document.getElementById("btn-like");
+const mensajeLike = document.getElementById("mensaje-like");
 
-// Evita que una misma pestaña/sesión sume más de una visita
-// (si prefieres contar cada recarga, borra este bloque de abajo
-// y llama directamente a incrementarContador()).
-const YA_CONTADO_KEY = "concientizacion_ya_contado";
+// Se guarda en este navegador para que la misma persona no pueda
+// sumar "me gusta" varias veces desde el mismo dispositivo.
+const YA_DIO_LIKE_KEY = "concientizacion_ya_dio_like";
 
-async function incrementarContador() {
-  const { data, error } = await client.rpc("incrementar_contador");
-  if (error) {
-    console.error("Error al incrementar el contador:", error);
-    contadorEl.textContent = "—";
-    return;
-  }
-  contadorEl.textContent = data;
-}
-
-async function soloMostrarContador() {
+// Solo muestra el número actual, sin sumar (se usa al cargar la página)
+async function mostrarContador() {
   const { data, error } = await client
     .from("contador")
     .select("conteo")
@@ -41,12 +33,50 @@ async function soloMostrarContador() {
   contadorEl.textContent = data.conteo;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (sessionStorage.getItem(YA_CONTADO_KEY)) {
-    // Esta sesión ya fue contada: solo mostramos el número actual
-    soloMostrarContador();
-  } else {
-    sessionStorage.setItem(YA_CONTADO_KEY, "1");
-    incrementarContador();
+// Suma 1 al contador (se usa solo cuando el usuario da clic en el corazón)
+async function darLike() {
+  const { data, error } = await client.rpc("incrementar_contador");
+  if (error) {
+    console.error("Error al incrementar el contador:", error);
+    return;
   }
+  contadorEl.textContent = data;
+}
+
+function mostrarEstadoYaDioLike() {
+  btnLike.disabled = true;
+  btnLike.innerHTML = '<span class="btn-like-icono">❤️</span> ¡Ya diste tu like!';
+  mensajeLike.classList.add("visible");
+}
+
+btnLike.addEventListener("click", async () => {
+  if (localStorage.getItem(YA_DIO_LIKE_KEY)) return;
+
+  btnLike.disabled = true; // evita doble clic mientras responde el servidor
+  await darLike();
+  localStorage.setItem(YA_DIO_LIKE_KEY, "1");
+  mostrarEstadoYaDioLike();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarContador();
+  if (localStorage.getItem(YA_DIO_LIKE_KEY)) {
+    mostrarEstadoYaDioLike();
+  }
+
+  // Voltear tarjetas al hacer clic o al presionar Enter/Espacio
+  document.querySelectorAll(".tarjeta").forEach((tarjeta) => {
+    const voltear = () => {
+      const volteada = tarjeta.classList.toggle("volteada");
+      tarjeta.setAttribute("aria-expanded", volteada ? "true" : "false");
+    };
+
+    tarjeta.addEventListener("click", voltear);
+    tarjeta.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        voltear();
+      }
+    });
+  });
 });
