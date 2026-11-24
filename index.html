@@ -12,128 +12,158 @@
     <h1>Concientización en Seguridad</h1>
     <p>Conceptos clave para proteger la información</p>
     <div class="contador-box">
-      <span class="contador-icono">👁️</span>
+      <span class="contador-icono">❤️</span>
       <div>
         <span id="contador-valor">...</span>
-        <small>personas han visitado esta página</small>
+        <small>personas ya terminaron de leer</small>
       </div>
     </div>
   </header>
 
-  <nav class="menu">
-    <a href="#cultura">4.1 Cultura de seguridad</a>
-    <a href="#ingenieria">4.2 Ingeniería social</a>
-    <a href="#politicas">4.3 Políticas básicas</a>
-    <a href="#practicas">4.4 Buenas prácticas</a>
-    <a href="#responsabilidad">4.5 Responsabilidad del usuario</a>
-  </nav>
+  <p class="instruccion-tarjetas">Toca cada tarjeta para ver la información</p>
 
-  <main>
+  <main class="tarjetas-grid">
 
-    <section id="cultura" class="tema">
-      <h2>4.1 Cultura de seguridad</h2>
+    <div class="tarjeta" tabindex="0" role="button" aria-expanded="false">
+      <div class="tarjeta-inner">
+        <div class="tarjeta-frente">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M32 4 L56 14 V30 C56 46 46 58 32 62 C18 58 8 46 8 30 V14 Z" fill="#2563eb"/>
+            <path d="M32 14 L48 21 V30 C48 41 41 49 32 52 C23 49 16 41 16 30 V21 Z" fill="#eff6ff"/>
+            <circle cx="32" cy="29" r="5" fill="#2563eb"/>
+            <rect x="29" y="33" width="6" height="10" rx="2" fill="#2563eb"/>
+          </svg>
+          <h3>4.1 Cultura de seguridad</h3>
+          <span class="tap-hint">Toca para ver más</span>
+        </div>
+        <div class="tarjeta-reverso">
+          <h3>4.1 Cultura de seguridad</h3>
+          <p>Conjunto de valores y comportamientos que una organización adopta frente a los riesgos de seguridad. Cada persona, no solo el área de sistemas, debe asumir su parte.</p>
+          <ul>
+            <li>Parte de la operación diaria, no una acción aislada.</li>
+            <li>Compromiso desde la dirección hasta cada colaborador.</li>
+            <li>Reportar incidentes sin temor a consecuencias.</li>
+            <li>Se fortalece con capacitación constante.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <!-- IMAGEN: reemplaza el src de abajo con tu imagen (ej. imagenes/cultura.jpg) -->
-      <figure class="imagen-placeholder">
-        <img src="imagenes/cultura.jpg" alt="Cultura de seguridad"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder-fallback">Coloca aquí tu imagen<br><small>imagenes/cultura.jpg</small></div>
-      </figure>
+    <div class="tarjeta" tabindex="0" role="button" aria-expanded="false">
+      <div class="tarjeta-inner">
+        <div class="tarjeta-frente">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="32" cy="32" r="28" fill="#fef3c7"/>
+            <path d="M20 26 C20 18 26 12 32 12 C38 12 44 18 44 26" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="24" cy="32" r="4" fill="#d97706"/>
+            <circle cx="40" cy="32" r="4" fill="#d97706"/>
+            <path d="M22 44 C26 40 38 40 42 44" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <h3>4.2 Ingeniería social</h3>
+          <span class="tap-hint">Toca para ver más</span>
+        </div>
+        <div class="tarjeta-reverso">
+          <h3>4.2 Ingeniería social</h3>
+          <p>Manipulación psicológica usada para obtener información confidencial o inducir acciones que comprometen la seguridad.</p>
+          <ul>
+            <li><strong>Phishing:</strong> correos falsos de una entidad confiable.</li>
+            <li><strong>Vishing:</strong> llamadas fraudulentas de soporte o bancos.</li>
+            <li><strong>Pretexting:</strong> historia falsa para ganar confianza.</li>
+            <li><strong>Baiting:</strong> dispositivos infectados como señuelo.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <p>Es el conjunto de valores y comportamientos que una organización adopta frente a los riesgos de seguridad. Implica que cada persona, no solo el área de sistemas, asuma su parte.</p>
-      <ul>
-        <li>Debe ser parte de la operación diaria, no una acción aislada.</li>
-        <li>Requiere compromiso desde la dirección hasta cada colaborador.</li>
-        <li>Fomenta reportar incidentes sin temor a consecuencias.</li>
-        <li>Se fortalece con capacitación constante.</li>
-      </ul>
-    </section>
+    <div class="tarjeta" tabindex="0" role="button" aria-expanded="false">
+      <div class="tarjeta-inner">
+        <div class="tarjeta-frente">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="14" y="8" width="36" height="48" rx="4" fill="#ede9fe"/>
+            <rect x="14" y="8" width="36" height="48" rx="4" fill="none" stroke="#7c3aed" stroke-width="3"/>
+            <line x1="22" y1="20" x2="42" y2="20" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+            <line x1="22" y1="30" x2="42" y2="30" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+            <line x1="22" y1="40" x2="34" y2="40" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <h3>4.3 Políticas básicas</h3>
+          <span class="tap-hint">Toca para ver más</span>
+        </div>
+        <div class="tarjeta-reverso">
+          <h3>4.3 Políticas básicas</h3>
+          <p>Reglas formales que definen cómo deben comportarse usuarios y sistemas para proteger la información.</p>
+          <ul>
+            <li>Contraseñas seguras y cambio periódico.</li>
+            <li>Uso aceptable de equipos y recursos tecnológicos.</li>
+            <li>Control de acceso según el rol del usuario.</li>
+            <li>Respaldo y recuperación de información.</li>
+            <li>Reporte de incidentes de seguridad.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <section id="ingenieria" class="tema">
-      <h2>4.2 Ingeniería social</h2>
+    <div class="tarjeta" tabindex="0" role="button" aria-expanded="false">
+      <div class="tarjeta-inner">
+        <div class="tarjeta-frente">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="10" y="10" width="44" height="44" rx="8" fill="#d1fae5"/>
+            <path d="M20 32 L28 40 L44 22" fill="none" stroke="#059669" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>4.4 Buenas prácticas</h3>
+          <span class="tap-hint">Toca para ver más</span>
+        </div>
+        <div class="tarjeta-reverso">
+          <h3>4.4 Buenas prácticas</h3>
+          <p>Hábitos que, aplicados de forma constante, reducen el riesgo de un incidente.</p>
+          <ul>
+            <li>Contraseñas únicas y robustas, idealmente con un gestor.</li>
+            <li>Autenticación de dos factores (2FA) siempre que sea posible.</li>
+            <li>No conectar dispositivos USB desconocidos.</li>
+            <li>Verificar remitentes y enlaces antes de dar clic.</li>
+            <li>Mantener sistemas y aplicaciones actualizados.</li>
+            <li>Bloquear el equipo al alejarse de él.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <!-- IMAGEN: reemplaza el src de abajo con tu imagen (ej. imagenes/ingenieria.jpg) -->
-      <figure class="imagen-placeholder">
-        <img src="imagenes/ingenieria.jpg" alt="Ingeniería social"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder-fallback">Coloca aquí tu imagen<br><small>imagenes/ingenieria.jpg</small></div>
-      </figure>
-
-      <p>Manipulación psicológica usada para obtener información confidencial o inducir acciones que comprometen la seguridad.</p>
-      <ul>
-        <li><strong>Phishing:</strong> correos falsos que simulan ser de una entidad confiable.</li>
-        <li><strong>Vishing:</strong> llamadas fraudulentas haciéndose pasar por soporte o bancos.</li>
-        <li><strong>Pretexting:</strong> uso de una historia falsa para ganar confianza.</li>
-        <li><strong>Baiting:</strong> dispositivos infectados dejados como señuelo.</li>
-      </ul>
-    </section>
-
-    <section id="politicas" class="tema">
-      <h2>4.3 Políticas básicas</h2>
-
-      <!-- IMAGEN: reemplaza el src de abajo con tu imagen (ej. imagenes/politicas.jpg) -->
-      <figure class="imagen-placeholder">
-        <img src="imagenes/politicas.jpg" alt="Políticas básicas"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder-fallback">Coloca aquí tu imagen<br><small>imagenes/politicas.jpg</small></div>
-      </figure>
-
-      <p>Reglas formales que definen cómo deben comportarse usuarios y sistemas para proteger la información.</p>
-      <ul>
-        <li>Contraseñas seguras y cambio periódico.</li>
-        <li>Uso aceptable de equipos y recursos tecnológicos.</li>
-        <li>Control de acceso según el rol del usuario.</li>
-        <li>Respaldo y recuperación de información.</li>
-        <li>Reporte de incidentes de seguridad.</li>
-      </ul>
-    </section>
-
-    <section id="practicas" class="tema">
-      <h2>4.4 Buenas prácticas</h2>
-
-      <!-- IMAGEN: reemplaza el src de abajo con tu imagen (ej. imagenes/practicas.jpg) -->
-      <figure class="imagen-placeholder">
-        <img src="imagenes/practicas.jpg" alt="Buenas prácticas"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder-fallback">Coloca aquí tu imagen<br><small>imagenes/practicas.jpg</small></div>
-      </figure>
-
-      <p>Hábitos que, aplicados de forma constante, reducen el riesgo de un incidente.</p>
-      <ul>
-        <li>Contraseñas únicas y robustas, idealmente con un gestor.</li>
-        <li>Autenticación de dos factores (2FA) siempre que sea posible.</li>
-        <li>No conectar dispositivos USB desconocidos.</li>
-        <li>Verificar remitentes y enlaces antes de dar clic.</li>
-        <li>Mantener sistemas y aplicaciones actualizados.</li>
-        <li>Bloquear el equipo al alejarse de él.</li>
-      </ul>
-    </section>
-
-    <section id="responsabilidad" class="tema">
-      <h2>4.5 Responsabilidad del usuario</h2>
-
-      <!-- IMAGEN: reemplaza el src de abajo con tu imagen (ej. imagenes/responsabilidad.jpg) -->
-      <figure class="imagen-placeholder">
-        <img src="imagenes/responsabilidad.jpg" alt="Responsabilidad del usuario"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder-fallback">Coloca aquí tu imagen<br><small>imagenes/responsabilidad.jpg</small></div>
-      </figure>
-
-      <p>Cada usuario es la primera línea de defensa; un solo descuido puede comprometer a toda la organización.</p>
-      <ul>
-        <li>Conocer y cumplir las políticas de seguridad vigentes.</li>
-        <li>Reportar de inmediato actividad sospechosa.</li>
-        <li>No compartir credenciales ni información sensible.</li>
-        <li>Participar en las capacitaciones de seguridad.</li>
-        <li>Asumir la seguridad como responsabilidad propia.</li>
-      </ul>
-    </section>
+    <div class="tarjeta" tabindex="0" role="button" aria-expanded="false">
+      <div class="tarjeta-inner">
+        <div class="tarjeta-frente">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="32" cy="20" r="10" fill="#2563eb"/>
+            <path d="M14 54 C14 40 22 34 32 34 C42 34 50 40 50 54" fill="#2563eb"/>
+            <path d="M26 44 L31 49 L40 38" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>4.5 Responsabilidad del usuario</h3>
+          <span class="tap-hint">Toca para ver más</span>
+        </div>
+        <div class="tarjeta-reverso">
+          <h3>4.5 Responsabilidad del usuario</h3>
+          <p>Cada usuario es la primera línea de defensa; un solo descuido puede comprometer a toda la organización.</p>
+          <ul>
+            <li>Conocer y cumplir las políticas de seguridad vigentes.</li>
+            <li>Reportar de inmediato actividad sospechosa.</li>
+            <li>No compartir credenciales ni información sensible.</li>
+            <li>Participar en las capacitaciones de seguridad.</li>
+            <li>Asumir la seguridad como responsabilidad propia.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </main>
 
+  <section class="final-lectura">
+    <p>¿Terminaste de leer? Si te fue útil esta información, dale corazón.</p>
+    <button id="btn-like" class="btn-like">
+      <span class="btn-like-icono">🤍</span> Me gustó
+    </button>
+    <p id="mensaje-like" class="mensaje-like">¡Gracias por tu lectura!</p>
+  </section>
+
   <footer>
-    <p>Concientización en Seguridad &middot;</p>
-     <p>Creado por No&eacute;. G.DLT</p>
+    <p>Concientización en Seguridad &middot; Proyecto con Supabase</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
